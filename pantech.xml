@@ -30,6 +30,7 @@
   <remove-project name="LineageOS-UL/android_packages_modules_adb" />
   <remove-project name="LineageOS-UL/android_packages_services_Telephony" />
   <remove-project name="LineageOS-UL/android_vendor_lineage" />
+  <remove-project name="LineageOS-UL/android_vendor_qcom_opensource_power" />
   <remove-project name="platform/external/f2fs-tools" />
 
   <project path="art" name="android_art" remote="sky-vega-platform" />
@@ -46,5 +47,6 @@
   <project path="packages/modules/adb" name="android_packages_modules_adb" remote="sky-vega-platform" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="sky-vega-platform" />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="sky-vega-platform" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="sky-vega-platform" groups="qcom,waipio-vendor" />
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="sky-vega-platform" groups="pdk" />
 </manifest>
