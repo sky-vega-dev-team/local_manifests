@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="sky-vega"
+          fetch="https://github.com/sky-vega-dev-team"
+          revision="refs/heads/lineage-21.0" />
+
+  <remote name="sky-vega-platform"
+          fetch="https://github.com/sky-vega-platform"
+          revision="refs/heads/lineage-21.0" />
+
+  <!-- Pantech VEGA -->
+  <project path="device/pantech/msm8974-common" name="device_pantech_msm8974-common" remote="sky-vega" />
+  <project path="device/pantech/ef63" name="device_pantech_ef63" remote="sky-vega" />
+  <project path="kernel/pantech/msm8x74" name="kernel_pantech_msm8x74" remote="sky-vega" />
+  <project path="vendor/pantech" name="vendor_pantech" remote="sky-vega" />
+
+  <!-- Platform: LineageOS-UL with the missing patches of the official
+       LineageOS 21.0 and the fixes of these devices -->
+  <remove-project name="LineageOS-UL/android_art" />
+  <remove-project name="LineageOS-UL/android_bionic" />
+  <remove-project name="LineageOS-UL/android_external_wpa_supplicant_8" />
+  <remove-project name="LineageOS-UL/android_frameworks_av" />
+  <remove-project name="LineageOS-UL/android_frameworks_base" />
+  <remove-project name="LineageOS-UL/android_frameworks_native" />
+  <remove-project name="LineageOS-UL/android_frameworks_opt_telephony" />
+  <remove-project name="LineageOS-UL/android_hardware_interfaces" />
+  <remove-project name="LineageOS-UL/android_packages_apps_Nfc" />
+  <remove-project name="LineageOS-UL/android_packages_modules_Bluetooth" />
+  <remove-project name="LineageOS-UL/android_packages_modules_Connectivity" />
+  <remove-project name="LineageOS-UL/android_packages_modules_adb" />
+  <remove-project name="LineageOS-UL/android_packages_services_Telephony" />
+  <remove-project name="LineageOS-UL/android_vendor_lineage" />
+  <remove-project name="platform/external/f2fs-tools" />
+
+  <project path="art" name="android_art" remote="sky-vega-platform" />
+  <project path="bionic" name="android_bionic" remote="sky-vega-platform" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="sky-vega-platform" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="sky-vega-platform" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="sky-vega-platform" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="sky-vega-platform" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="sky-vega-platform" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="sky-vega-platform" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="sky-vega-platform" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="sky-vega-platform" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="sky-vega-platform" />
+  <project path="packages/modules/adb" name="android_packages_modules_adb" remote="sky-vega-platform" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="sky-vega-platform" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="sky-vega-platform" />
+  <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="sky-vega-platform" groups="pdk" />
+</manifest>

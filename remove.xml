@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- AOSP Qualcomm WLAN: its libwifi-hal-qcom defaults shadow the prebuilt
+       libwifi-hal-qcom of LineageOS-UL, the HAL comes from qcom-caf/wlan -->
+  <remove-project path="hardware/qcom/wlan" />
+</manifest>
